@@ -2,7 +2,7 @@
 //
 //		ＤＸライブラリ　コンパイルコンフィグヘッダファイル
 //
-//				Ver 3.19d
+//				Ver 3.20c
 //
 // ----------------------------------------------------------------------------
 
@@ -356,10 +356,13 @@
 	#ifndef DX_NON_OGGTHEORA
 		#define DX_NON_OGGTHEORA
 	#endif
+	#ifndef DX_NON_OPUS
+		#define DX_NON_OPUS
+	#endif
 #endif
 
 
-#if defined( _WIN64 ) || defined( __APPLE__ ) || defined( __LP64__ )
+#if defined( _WIN64 ) || defined( __LP64__ )
 	#ifndef __64BIT__
 		#define __64BIT__
 	#endif
