@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="src\ECS\ECS.cpp">
+      <Filter>ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameController\GameController.cpp">
+      <Filter>GameController</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameController\Scene\Game.cpp">
+      <Filter>GameController\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameController\Scene\Title.cpp">
+      <Filter>GameController\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ArcheType\ArcheType.hpp">
+      <Filter>ArcheType</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ArcheType\Primitive2D.hpp">
+      <Filter>ArcheType</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Class\Sound.hpp">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Class\ResourceManager.hpp">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\BasicComponents.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\Collider.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\Renderer.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ECS\ECS.hpp">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameController\GameController.h">
+      <Filter>GameController</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameController\GameMain.hpp">
+      <Filter>GameController\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameController\Scene\Game.h">
+      <Filter>GameController\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameController\Scene\Title.h">
+      <Filter>GameController\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Input\Input.hpp">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\System\System.hpp">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Counter.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Easing.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\FPS.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\JsonIO.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Parameter.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\picojson.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Random.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\String.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Utility.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Vec.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Collision\Collision.hpp">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameController\Scene\SceneManager.hpp">
+      <Filter>GameController\Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ArcheType">
+      <UniqueIdentifier>{29724cfc-0578-4110-a533-2c3435f92d4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class">
+      <UniqueIdentifier>{0bee6ccf-71b9-4e16-b9ee-772f01c9b3b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{2b3faca3-2b04-4aac-b685-9f931ce3c980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS">
+      <UniqueIdentifier>{938a301c-2ef4-4fa8-9460-574b8adba800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameController">
+      <UniqueIdentifier>{2e64098a-aa64-4578-bddc-dbc331b9a8c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameController\Scene">
+      <UniqueIdentifier>{caa571ec-10c8-46b3-a2a4-2fd730ba10f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{d5c18332-4bd8-49a6-b85e-9fb1a42f1f5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{c7ed0a66-4a20-4c0f-bf2d-914f3c98dd3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{db198c95-3fd6-4d35-ade4-2ed6aeee102b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{3ca8ad26-1c37-4bcc-ada6-610fe6aac968}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

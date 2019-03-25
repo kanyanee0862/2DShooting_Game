@@ -1,0 +1,12 @@
+{
+  "obj":
+  {
+    "posX": 20,
+    "posY": 20,
+    "radius":20,
+    "start": 20,
+    "end": 720,
+    "easing": "QuadIn",
+    "durationTime": 100
+  }
+}
