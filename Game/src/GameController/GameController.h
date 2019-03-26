@@ -32,6 +32,7 @@ public:
 		DEFAULT,		//デフォルト
 		BACKGROUND,		
 		PLAYER,
+		ENEMY,
 		MAX,			//最大数
 	};
 	GameController();

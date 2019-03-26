@@ -5,7 +5,7 @@
 #include "../GameController.h"
 #include "../src/Utility/Parameter.hpp"
 #include "../src/Components/BackGround.hpp"
-
+#include "../src/ArcheType/CharacterArcheType.hpp"
 namespace Scene
 {
 	Title::~Title()
@@ -18,32 +18,13 @@ namespace Scene
 	{
 		ResourceManager::GetGraph().load("Resource/image/back.png", "BG");
 		ResourceManager::GetGraph().load("Resource/image/ship.png", "ship");
+		ResourceManager::GetGraph().load("Resource/image/enemy01.png", "enemy");
 	}
-
-	////下に動かす
-	//class BackGroundMove : public ECS::ComponentSystem
-	//{
-	//private:
-	//	//Positionの参照を保存するため
-	//	ECS::Position* pos_;
-	//public:
-
-	//	void initialize() override
-	//	{
-	//		//ownerからPostionの参照を得る
-	//		pos_ = &owner->getComponent<ECS::Position>();
-
-	//	}
-
-	//	void update() override
-	//	{
-	//		++pos_->val.y;
-	//	}
-	//};
-
 
 	void Title::initialize()
 	{
+		ECS::CharacterArcheType::CreatePlayer(*entityManager_);
+		ECS::CharacterArcheType::CreateEnemy(*entityManager_);
 
 		background = &entityManager_->addEntity(ENTITY_GROUP::BACKGROUND);
 		background->addComponent<ECS::Transform>();
@@ -58,11 +39,9 @@ namespace Scene
 		background2->getComponent<ECS::Position>().val.y = -System::SCREEN_HEIGHT;
 		background2->addComponent<ECS::BGMove>();
 
-		auto ship = &entityManager_->addEntity(ENTITY_GROUP::PLAYER);
-		ship->addComponent<ECS::Transform>();
-		ship->addComponent<ECS::SpriteDraw>("ship");
-		ship->getComponent<ECS::SpriteDraw>().setPivot(Vec2{ 0.0f, 0.0f });
+	
 
+		
 	}
 
 	void Title::update()
