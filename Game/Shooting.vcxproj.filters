@@ -94,6 +94,12 @@
     <ClInclude Include="src\GameController\Scene\SceneManager.hpp">
       <Filter>GameController\Scene</Filter>
     </ClInclude>
+    <ClInclude Include="src\Components\MoveComponent.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Components\BackGround.hpp">
+      <Filter>Components</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="ArcheType">
