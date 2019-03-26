@@ -30,6 +30,7 @@ public:
 	enum class GameGroup : ECS::Group
 	{
 		DEFAULT,		//デフォルト
+		BACKGROUND,		
 		PLAYER,
 		MAX,			//最大数
 	};
