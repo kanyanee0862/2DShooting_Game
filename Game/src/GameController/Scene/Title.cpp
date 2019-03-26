@@ -15,12 +15,23 @@ namespace Scene
 		: AbstractScene(sceneTitleChange)
 		, entityManager_(entityManager)
 	{
-	
+		ResourceManager::GetGraph().load("Resource/image/back.png", "BG");
+		ResourceManager::GetGraph().load("Resource/image/ship.png", "ship");
 	}
 
 	void Title::initialize()
 	{
 
+		background = &entityManager_->addEntity(ENTITY_GROUP::DEFAULT);
+		background->addComponent<ECS::Transform>();
+		background->addComponent<ECS::SpriteDraw>("BG");
+		background->getComponent<ECS::SpriteDraw>().setPivot(Vec2(0.0f, 0.0f));
+
+		auto ship = &entityManager_->addEntity(ENTITY_GROUP::PLAYER);
+		ship->addComponent<ECS::Transform>();
+		ship->addComponent<ECS::SpriteDraw>("ship");
+		ship->getComponent<ECS::SpriteDraw>().setPivot(Vec2(0.0f, 0.0f));
+		
 	}
 
 	void Title::update()
