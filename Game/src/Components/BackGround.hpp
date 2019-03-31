@@ -24,4 +24,5 @@ namespace ECS
 	private:
 		Position* pos_;
 	};
+
 }

@@ -23,23 +23,13 @@ namespace Scene
 
 	void Title::initialize()
 	{
+		//playerを生成
 		ECS::CharacterArcheType::CreatePlayer(*entityManager_);
+		//enemyを生成
 		ECS::CharacterArcheType::CreateEnemy(*entityManager_);
-
-		background = &entityManager_->addEntity(ENTITY_GROUP::BACKGROUND);
-		background->addComponent<ECS::Transform>();
-		background->addComponent<ECS::SpriteDraw>("BG");
-		background->getComponent<ECS::SpriteDraw>().setPivot(Vec2{ 0.0f, 0.0f });
-		background->addComponent<ECS::BGMove>();
-
-		auto background2 = &entityManager_->addEntity(ENTITY_GROUP::BACKGROUND);
-		background2->addComponent<ECS::Transform>();
-		background2->addComponent<ECS::SpriteDraw>("BG");
-		background2->getComponent<ECS::SpriteDraw>().setPivot(Vec2{ 0.0f, 0.0f });
-		background2->getComponent<ECS::Position>().val.y = -System::SCREEN_HEIGHT;
-		background2->addComponent<ECS::BGMove>();
-
-	
+		//BG2枚を生成
+		ECS::CharacterArcheType::CreateBG(*entityManager_);
+		ECS::CharacterArcheType::CreateBG(*entityManager_)->getComponent<ECS::Position>().val.y = -System::SCREEN_HEIGHT;
 
 		
 	}

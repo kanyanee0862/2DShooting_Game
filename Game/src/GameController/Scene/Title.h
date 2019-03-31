@@ -22,8 +22,7 @@ namespace Scene
 	private:
 		ECS::EntityManager* entityManager_{};
 		Easing easing;
-		ECS::Entity* background;
-	public:
+		public:
 		~Title();
 		Title(IOnSceneChangeCallback* sceneTitleChange, ECS::EntityManager* entityManager);
 		virtual void initialize() override;
